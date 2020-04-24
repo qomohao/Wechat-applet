@@ -1,2 +1,3 @@
 <!--components/list/list.wxml-->
-<text>components/list/list.wxml</text>
+ 
+<view bindtap="changeVal">{{propData}}</view>

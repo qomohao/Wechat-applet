@@ -16,7 +16,7 @@ export const baseUrl = 'http://v.juhe.cn/';
     // 请求开始，显示loading
     if (loading) {
       wx.showLoading({
-        title: '加载中...'
+        title: 'loading...'
       })
     }
     console.log("请求参数",params)
@@ -47,7 +47,7 @@ export const baseUrl = 'http://v.juhe.cn/';
     // 请求开始，显示loading
     if (loading) {
       wx.showLoading({
-        title: '加载中...'
+        title: 'loading...'
       })
     }
     params.key="6fd2b3366e7a6dc2da85fccc259b2e89";

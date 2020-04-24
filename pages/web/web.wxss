@@ -1,0 +1,13 @@
+/* pages/web/web.wxss */
+.back{
+    position: absolute;
+    z-index: 999;
+    padding: 10rpx 20rpx;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 20rpx;
+    border-bottom-right-radius: 20rpx;
+    background: #737373;
+    overflow: hidden;
+    color: #fff;
+}

@@ -4,7 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    propData:{
+      type:String,
+    }
   },
 
   /**
@@ -18,6 +20,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    changeVal(){
+      console.log("改变数值");
+      this.setData({
+        propData:"123"
+      })
+      this.triggerEvent("changeNewVal","父组件监听到了子组件触发的信息！")
+      
+    }
   }
 })

@@ -1,36 +1,28 @@
-// pages/book/book.js
-import {$get ,$post} from "../../utils/request"
+// pages/web/web.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    // 页面接收参数
-    params:{},
-    listData: []
+    h5Url:""
   },
 
+  // 返回小程序
+  back:function(){
+    wx.miniProgram.navigateTo({url: "pages/index/index"})
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log("页面接收参数",options);
     this.setData({
-      params:options
+      h5Url:options.h5
     })
-    console.log(this.data.listData);
-    // 获取列表数据
-    this.getList();
+     
   },
-  // 获取列表数据
-  getList: async function () {
-    let data = await $get("/jztk/query",this.data.params);
-    console.log(data)
-    this.setData({
-      listData: data.data.result
-    })
-    console.log(this.data.listData);
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

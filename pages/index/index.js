@@ -18,6 +18,13 @@ Page({
       url: params?url+params:url
     })
   },
+  // 父组件监听到了子组件触发的信息！
+  changeNewVal(v){
+    console.log(v);
+    wx.showToast({
+      title: v.detail,
+    }) 
+  },
   // 页面相关事件处理函数–监听用户下拉动作
   onPullDownRefresh: function () {
       console.log("下拉动作")

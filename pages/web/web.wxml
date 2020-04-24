@@ -1,0 +1,4 @@
+<!--pages/web/web.wxml-->
+<!-- H5链接 -->
+<web-view class="qwe"  src="{{h5Url}}"></web-view>
+<!-- <view class="back" bindtap="back">返回小程序</view> -->
