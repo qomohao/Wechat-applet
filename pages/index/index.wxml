@@ -21,7 +21,7 @@
       C1科目四<span>（顺序练习）</span></view>
     <view class="menu-item" bindtap="goToPage" data-url="../book/book" data-params="?subject=4&model=c1&testType=rand">
       C1科目四<span>（随机测试）</span></view>
-
+   
     <!-- <view class="menu-item" bindtap="goToPage" data-url="../book/book" data-params="?subject=1&model=c2&testType=order">
       C2科目一<span>（顺序练习）</span></view>
     <view class="menu-item" bindtap="goToPage" data-url="../book/book" data-params="?subject=1&model=c2&testType=rand">
@@ -33,6 +33,11 @@
       <!-- h5链接 -->
       <view class="menu-item" bindtap="goToPage" data-url="../web/web" data-params="?h5=https://www.jd.com">京东购物</view>
       <view class="menu-item" bindtap="goToPage" data-url="../web/web" data-params="?h5=http://news.sohu.com">搜狐新闻</view>
+
+       <view class="menu-item" bindtap="scanCode" >
+      扫一扫<span>（测试）</span></view>
+      <view class="menu-item" bindtap="getSystemInfo" >
+      获取设备信息</view>
   </view>
   <!-- 引用组件 -->
   <component-list propData="这是父组件传给子组件的数据" bind:changeNewVal="changeNewVal"/>

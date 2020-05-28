@@ -33,6 +33,27 @@ Page({
   onReachBottom: function () {
     console.log("上拉动作")
   },
+  // 调用扫一扫功能
+  scanCode(){
+    wx.scanCode({
+      success: (res) => {
+        console.log(res);
+        wx.navigateTo({
+          url: '../web/web?=h5'+res.result
+        })
+        // return res.result;
+      }
+    })
+  },
+  // 获取设备信息
+  getSystemInfo(){
+    wx.getSystemInfo({
+      success: (res) => {
+        console.log(res);
+        // return res.result;
+      }
+    })
+  },
   onLoad: function () {
  
     // wx.showLoading({
